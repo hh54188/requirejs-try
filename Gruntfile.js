@@ -12,7 +12,7 @@ module.exports = function(grunt) {
                     // 如果config中使用的是URL，则jquery: 'empty'
                 },                
                 name: "main",
-                out: "main-min.js"
+                out: "build/main-min.js"
               }
             }
         }
