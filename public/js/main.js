@@ -16,7 +16,7 @@ requirejs.config({
 });
 
 // require(["module/moduleA", "jquery"], function (A, $){
-require(["module/moduleA", "module/moduleB"], function (A, B){
+require(["module/moduleA", "module/moduleB", "jquery"], function (A, B){
     console.info(A);
     console.info(B);
 });

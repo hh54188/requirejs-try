@@ -1,4 +1,5 @@
 define(function (require, exports, module) {
-	var B = require('module/moduleB');
-	console.info(B);
+	exports.C = function () {
+		console.info("this is module C");
+	}
 })
