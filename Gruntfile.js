@@ -16,15 +16,18 @@ module.exports = function(grunt) {
             //   }
             // },
             compileProject: {
-                baseUrl: 'public/js',  // 此时的路径应该是相对于appDir
-                appDir: '.', // 当需要优化整个项目时启用该项
-                dir: 'punlic/build',
-                modules: [
-                    { name: 'main'}
-                ],
-                paths: {
-                    main: 'main',
-                    jquery: 'lib/jquery-1.10.0.min.js'
+                options: {
+                    baseUrl: 'js', // If appDir is set, the baseUrl should be specified as relative to the appDir.
+                    appDir: 'public', 
+                    dir: 'build', // All relative paths are relative to the build file
+                    keepBuildDir: false,
+                    modules: [
+                        { name: 'main'}
+                    ],
+                    paths: {
+                        main: 'main',
+                        jquery: 'lib/jquery-1.10.0.min'
+                    }
                 }
             }
         }
