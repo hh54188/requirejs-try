@@ -21,6 +21,7 @@ module.exports = function(grunt) {
                     appDir: 'public', 
                     dir: 'build', // All relative paths are relative to the build file
                     keepBuildDir: false,
+                    optimizeCss: 'standard',
                     modules: [
                         { name: 'main'}
                     ],
